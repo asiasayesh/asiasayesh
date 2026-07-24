@@ -60,7 +60,7 @@ const translations = {
         {
           name: "Non-Woven Cloth Flap Wheels",
           description:
-            "Cloth-backed non-woven flap wheels for cleaning, blending, and uniform finishing on metal.",
+            "Non-woven flap wheels for cleaning, blending, and scratch-free finishing on metals and alloy products. Can be combined with abrasive cloth upon customer request.",
           learnMore: "Learn More",
         },
         {
@@ -171,7 +171,7 @@ const translations = {
         {
           name: "فلاپ ویل پارچه‌ای اسکاچ",
           description:
-            "فلاپ ویل اسکاچ با پشت پارچه‌ای برای تمیزکاری، یکنواخت‌سازی و پرداخت یکنواخت روی فلز.",
+            "فلاپ ویل اسکاچ برای تمیزکاری، یکنواخت‌سازی و پرداخت بدون خط و خش روی فلزات و مصنوعات آلیاژی کاربرد دارد. این محصول بنا به درخواست مصرف‌کننده می‌تواند با سمباده ترکیب شود.",
           learnMore: "بیشتر بدانید",
         },
         {
