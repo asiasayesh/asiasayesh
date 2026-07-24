@@ -36,10 +36,11 @@ export const metadata: Metadata = {
       "Professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.",
     images: [
       {
-        url: "/hero-abrasives.jpg",
-        width: 1200,
-        height: 630,
+        url: "/og.jpg",
+        width: 1731,
+        height: 909,
         alt: "AsiaSayesh Industrial Abrasive Products",
+        type: "image/jpeg",
       },
     ],
   },
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     title: "AsiaSayesh | Premium Industrial Abrasive Products",
     description:
       "Professional-grade abrasive solutions for industrial manufacturing.",
-    images: ["/hero-abrasives.jpg"],
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,
