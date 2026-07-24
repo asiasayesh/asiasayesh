@@ -75,7 +75,7 @@ const translations = {
   },
   fa: {
     nav: {
-      brand: 'آسیا سایش',
+      brand: ' سایش',
       products: 'محصولات',
       contact: 'تماس',
       callNow: 'تماس بگیرید',
@@ -123,7 +123,7 @@ const translations = {
       },
     ],
     cta: {
-      title: 'آماده‌اید برای ارتقای پولیش خود؟',
+      title: 'آماده‌اید برای ارتقای پرداخت کاری خود؟',
       description: 'امروز با تیم فروش ما تماس بگیرید تا نیازهای خاص خود را بررسی کنید و پیشنهاد قیمت دریافت کنید.',
       callTitle: 'تماس بگیرید',
       callAvailability: 'دوشنبه تا جمعه، ۹ صبح تا ۵ عصر',
@@ -193,13 +193,15 @@ export default function Home() {
           <div className="text-2xl font-bold tracking-tighter">
             <span className="text-primary">{isRTL ? 'آسیا' : 'Asia'}</span> {t.nav.brand}
           </div>
-          <div className="hidden md:flex gap-8 items-center">
-            <a href="#products" className="hover:text-primary transition-colors">{t.nav.products}</a>
-            <a href="#contact" className="hover:text-primary transition-colors">{t.nav.contact}</a>
-            <a href={callHref} className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-              <Phone size={18} />
-              {t.nav.callNow}
-            </a>
+          <div className="flex gap-3 items-center">
+            <div className="hidden md:flex gap-8 items-center">
+              <a href="#products" className="hover:text-primary transition-colors">{t.nav.products}</a>
+              <a href="#contact" className="hover:text-primary transition-colors">{t.nav.contact}</a>
+              <a href={callHref} className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                <Phone size={18} />
+                {t.nav.callNow}
+              </a>
+            </div>
             <button
               onClick={() => setLanguage(language === 'en' ? 'fa' : 'en')}
               className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border hover:border-primary/50 transition-colors"
