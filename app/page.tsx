@@ -17,7 +17,7 @@ const translations = {
     hero: {
       badge: 'Industrial Excellence',
       title: 'Professional Abrasive Solutions for Every Industry',
-      description: 'From precision grinding to fine polishing, our industrial-grade abrasive products deliver consistent results and unmatched durability.',
+      description: 'From precision fine polishing, our industrial-grade abrasive products deliver consistent results and unmatched durability.',
       getStarted: 'Get Started',
       emailSales: 'Email Sales',
     },
@@ -57,11 +57,11 @@ const translations = {
       },
     ],
     cta: {
-      title: 'Ready to Upgrade Your Abrasives?',
+      title: 'Ready to Upgrade Your Polishing?',
       description: 'Contact our sales team today to discuss your specific needs and get a custom quote.',
       callTitle: 'Call Us',
-      callAvailability: 'Available Monday to Friday, 8am-5pm EST',
-      callNumber: '+1 (800) 555-0100',
+      callAvailability: 'Available Monday to Friday, 9am-5pm',
+      callNumber: '+98 912 132 7308',
       emailTitle: 'Email Us',
       emailAvailability: 'We\'ll respond within 2 business hours',
       email: 'sales@asiasayesh.com',
@@ -69,6 +69,7 @@ const translations = {
     footer: {
       companyName: 'AsiaSayesh',
       companyDesc: 'Leading provider of industrial abrasive solutions.',
+      address: 'Iran, Tehran, Emam Khomeini Av, Soltani Alley, Old Jafari Mall, 1st floor, number 5',
       copyright: '© 2026 AsiaSayesh. All rights reserved.',
     },
   },
@@ -81,18 +82,18 @@ const translations = {
     },
     hero: {
       badge: 'تعالی صنعتی',
-      title: 'راه‌حل‌های سنگ‌فرش حرفه‌ای برای هر صنعتی',
-      description: 'از آسیاب‌کاری دقیق تا صیقل‌کاری ظریف، محصولات سنگ‌فرش درجه صنعتی ما نتایج ثابت و دوام بی‌نظیری را ارائه می‌دهند.',
+      title: 'راه‌حل‌های پولیش حرفه‌ای برای هر صنعتی',
+      description: 'از پولیش‌کاری دقیق و ظریف، محصولات پولیش درجه صنعتی ما نتایج ثابت و دوام بی‌نظیری را ارائه می‌دهند.',
       getStarted: 'شروع کنید',
       emailSales: 'ارسال ایمیل',
     },
     products: {
       title: 'محصولات ما',
-      description: 'راه‌حل‌های سنگ‌فرش بسیار باکیفیت برای دقت، دوام و عملکرد برتر',
+      description: 'راه‌حل‌های پولیش بسیار باکیفیت برای دقت، دوام و عملکرد برتر',
       items: [
         {
-          name: 'چرخ‌های سنگ‌فرش',
-          description: 'چرخ‌های سنگ‌فرش دقیق برای مواد فلزی، بتنی و ترکیبی با طول عمر فراوان.',
+          name: 'چرخ‌های پولیش',
+          description: 'چرخ‌های پولیش دقیق برای مواد فلزی، بتنی و ترکیبی با طول عمر فراوان.',
           learnMore: 'بیشتر بدانید',
         },
         {
@@ -118,26 +119,35 @@ const translations = {
       },
       {
         title: 'پشتیبانی کارشناسی',
-        description: 'تیم متخصصان سنگ‌فرش ما آماده‌اند تا راه‌حل مناسب را پیدا کنند.',
+        description: 'تیم متخصصان پولیش ما آماده‌اند تا راه‌حل مناسب را پیدا کنند.',
       },
     ],
     cta: {
-      title: 'آماده‌اید برای ارتقای سنگ‌فرش خود؟',
+      title: 'آماده‌اید برای ارتقای پولیش خود؟',
       description: 'امروز با تیم فروش ما تماس بگیرید تا نیازهای خاص خود را بررسی کنید و پیشنهاد قیمت دریافت کنید.',
       callTitle: 'تماس بگیرید',
-      callAvailability: 'دوشنبه تا جمعه، ۸ صبح تا ۵ عصر EST',
-      callNumber: '+۱ (۸۰۰) ۵۵۵-۰۱۰۰',
+      callAvailability: 'دوشنبه تا جمعه، ۹ صبح تا ۵ عصر',
+      callNumber: '+98 912 132 7308',
       emailTitle: 'ایمیل بفرستید',
       emailAvailability: 'ما در عرض ۲ ساعت کاری پاسخ خواهیم داد',
       email: 'sales@asiasayesh.com',
     },
     footer: {
       companyName: 'آسیا سایش',
-      companyDesc: 'تامین کننده حرفه‌ای راه‌حل‌های سنگ‌فرش صنعتی.',
+      companyDesc: 'تامین کننده حرفه‌ای راه‌حل‌های پولیش صنعتی.',
+      address: 'ایران، تهران، خیابان امام خمینی، کوچه سلطانی، پاساژ جعفری قدیم، طبقه اول، پلاک ۵',
       copyright: '© ۲۰۲۶ آسیا سایش. تمام حقوق محفوظ است.',
     },
   },
 }
+
+const phones = [
+  { href: 'tel:+982166748796', label: '+98 21 6674 8796' },
+  { href: 'tel:+982166748797', label: '+98 21 6674 8797' },
+  { href: 'tel:+989121327308', label: '+98 912 132 7308' },
+]
+
+const callHref = phones[2].href
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>('en')
@@ -186,7 +196,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8 items-center">
             <a href="#products" className="hover:text-primary transition-colors">{t.nav.products}</a>
             <a href="#contact" className="hover:text-primary transition-colors">{t.nav.contact}</a>
-            <a href="tel:+1-800-555-0100" className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+            <a href={callHref} className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
               <Phone size={18} />
               {t.nav.callNow}
             </a>
@@ -309,7 +319,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Phone CTA */}
             <a
-              href="tel:+1-800-555-0100"
+              href={callHref}
               className="p-8 rounded-lg border border-primary/40 bg-background hover:bg-primary/5 transition-all group"
             >
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
@@ -318,7 +328,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2">{t.cta.callTitle}</h3>
               <p className="text-muted-foreground mb-4">{t.cta.callAvailability}</p>
               <span className={`inline-flex items-center gap-2 text-primary font-semibold text-lg hover:gap-3 transition-all ${isRTL ? 'flex-row-reverse' : ''}`}>
-                {t.cta.callNumber} <ArrowRight size={20} />
+                <span dir="ltr">{t.cta.callNumber}</span> <ArrowRight size={20} />
               </span>
             </a>
 
@@ -333,7 +343,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2">{t.cta.emailTitle}</h3>
               <p className="text-muted-foreground mb-4">{t.cta.emailAvailability}</p>
               <span className={`inline-flex items-center gap-2 text-primary font-semibold text-lg hover:gap-3 transition-all ${isRTL ? 'flex-row-reverse' : ''}`}>
-                {t.cta.email} <ArrowRight size={20} />
+                <span dir="ltr">{t.cta.email}</span> <ArrowRight size={20} />
               </span>
             </a>
           </div>
@@ -352,12 +362,20 @@ export default function Home() {
             </div>
             <div>
               <h4 className="text-lg font-bold mb-4">{isRTL ? 'تماس با ما' : 'Contact Us'}</h4>
-              <div className={`space-y-3 text-muted-foreground ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <p>
-                  <a href="tel:+1-800-555-0100" className="hover:text-primary transition-colors">
-                    {isRTL ? 'تلفن: ' : 'Phone: '} +1 (800) 555-0100
-                  </a>
-                </p>
+              <div className="space-y-3 text-muted-foreground">
+                <p>{t.footer.address}</p>
+                <div className="space-y-1">
+                  <p className="text-sm font-medium text-foreground">{isRTL ? 'تلفن' : 'Phone'}</p>
+                  <ul className="space-y-1 font-mono tabular-nums tracking-wide" dir="ltr">
+                    {phones.map(({ href, label }) => (
+                      <li key={href}>
+                        <a href={href} className="hover:text-primary transition-colors">
+                          {label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <p>
                   <a href="mailto:sales@asiasayesh.com" className="hover:text-primary transition-colors">
                     {isRTL ? 'ایمیل: ' : 'Email: '} sales@asiasayesh.com

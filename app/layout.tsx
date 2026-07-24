@@ -96,7 +96,7 @@ export default function RootLayout({
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Sales',
-      telephone: '+1-800-555-0100',
+      telephone: '+989121327308',
       email: 'sales@asiasayesh.com',
     },
     address: {
@@ -108,6 +108,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-background ${poppins.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
