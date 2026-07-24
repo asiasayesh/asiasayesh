@@ -30,13 +30,13 @@ const translations = {
         {
           name: "Abrasive Cylinders",
           description:
-            "Cylindrical sanding sleeves for contour work, deburring, and finishing on curved surfaces.",
+            "Ring abrasives for contour work, deburring, and finishing on curved surfaces.",
           learnMore: "Learn More",
         },
         {
           name: "Mounted Flap Wheels",
           description:
-            "Shank-mounted abrasive flaps for deburring, blending, and finishing on contoured metal surfaces.",
+            "Mounted flap abrasives for deburring, blending, and finishing flat and contoured surfaces on metal, wood, and alloy products.",
           learnMore: "Learn More",
         },
         {
@@ -141,13 +141,13 @@ const translations = {
         {
           name: "سمباده حلقوی",
           description:
-            "باندهای استوانه‌ای برای کار روی سطوح منحنی، پلیسه‌گیری و پرداخت.",
+            "سمباده‌های حلقوی برای کار روی سطوح منحنی، پلیسه‌گیری و پرداخت.",
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ ویل شفت‌دار",
+          name: "سمباده چتری",
           description:
-            "فلاپ‌های ساینده شفت‌دار برای پلیسه‌گیری، یکنواخت‌سازی و پرداخت سطوح فلزی.",
+            "سمباده‌های چتری برای پلیسه‌گیری، یکنواخت‌سازی و پرداخت سطوح صاف و منحنی روی فلز، چوب و مصنوعات آلیاژی.",
           learnMore: "بیشتر بدانید",
         },
         {
