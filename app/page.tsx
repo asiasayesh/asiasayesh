@@ -42,7 +42,7 @@ const translations = {
         {
           name: "Abrasive Sanding Belts",
           description:
-            "Endless abrasive belts for stock removal, grinding, and surface finishing on metal and wood.",
+            "Abrasive belts for stock removal and uniform finishing of flat and contoured surfaces on metals, wood, and alloy products.",
           learnMore: "Learn More",
         },
         {
@@ -151,9 +151,9 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "نوارهای سنباده‌ای",
+          name: "سمباده تسمه‌ای",
           description:
-            "نوارهای بی‌انتها برای براده‌برداری، سنگ‌زنی و پرداخت سطح روی فلز و چوب.",
+            "سمباده‌های تسمه‌ای برای براده‌برداری و پرداخت یکنواخت سطوح صاف و منحنی از روی فلزات، چوب و مصنوعات آلیاژی کاربرد دارد.",
           learnMore: "بیشتر بدانید",
         },
         {
