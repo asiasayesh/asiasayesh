@@ -153,19 +153,19 @@ export default function Home() {
         '@type': 'Product',
         name: 'Grinding Wheels',
         description: 'Precision-engineered grinding wheels for metal, concrete, and composite materials with extended lifespan.',
-        image: 'https://www.asiasayesh.com/product-grinding-wheel.png',
+        image: 'https://asiasayesh.com/product-grinding-wheel.png',
       },
       {
         '@type': 'Product',
         name: 'Sandpaper & Sheets',
         description: 'Industrial-grade sandpaper available in multiple grit sizes for surface preparation and finishing.',
-        image: 'https://www.asiasayesh.com/product-sandpaper.png',
+        image: 'https://asiasayesh.com/product-sandpaper.png',
       },
       {
         '@type': 'Product',
         name: 'Polishing Compounds',
         description: 'Professional polishing compounds and buffing pads for superior shine and protection on any surface.',
-        image: 'https://www.asiasayesh.com/product-polishing.png',
+        image: 'https://asiasayesh.com/product-polishing.png',
       },
     ],
   }

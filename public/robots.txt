@@ -6,8 +6,8 @@ Disallow: /_next
 Disallow: /api
 
 # Sitemaps
-Sitemap: https://www.asiasayesh.com/sitemap.xml
-Sitemap: https://www.asiasayesh.com/sitemap-fa.xml
+Sitemap: https://asiasayesh.com/sitemap.xml
+Sitemap: https://asiasayesh.com/sitemap-fa.xml
 
 # Crawl delay (optional)
 Crawl-delay: 0

@@ -13,16 +13,16 @@ export const metadata: Metadata = {
   title: 'AsiaSayesh | Premium Industrial Abrasive Products & Solutions',
   description: 'AsiaSayesh provides premium industrial abrasive products including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.',
   keywords: ['abrasive products', 'grinding wheels', 'sandpaper', 'polishing compounds', 'industrial abrasives', 'surface finishing', 'industrial supplies'],
-  metadataBase: new URL('https://www.asiasayesh.com'),
+  metadataBase: new URL('https://asiasayesh.com'),
   alternates: {
     languages: {
-      en: 'https://www.asiasayesh.com',
-      fa: 'https://www.asiasayesh.com/fa',
+      en: 'https://asiasayesh.com',
+      fa: 'https://asiasayesh.com/fa',
     },
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.asiasayesh.com',
+    url: 'https://asiasayesh.com',
     title: 'AsiaSayesh | Premium Industrial Abrasive Products',
     description: 'Professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.',
     images: [
@@ -89,8 +89,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'AsiaSayesh',
-    url: 'https://www.asiasayesh.com',
-    logo: 'https://www.asiasayesh.com/logo.png',
+    url: 'https://asiasayesh.com',
+    logo: 'https://asiasayesh.com/logo.png',
     description: 'Leading provider of industrial abrasive solutions.',
     sameAs: [],
     contactPoint: {
