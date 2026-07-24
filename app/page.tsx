@@ -112,7 +112,6 @@ const translations = {
       email: "sales@asiasayesh.com",
     },
     footer: {
-      companyName: "AsiaSayesh",
       companyDesc: "Leading provider of industrial abrasive solutions.",
       address:
         "No. 5, 1st floor, Old Jafari Mall, Soltani Alley, Emam Khomeini Ave, Tehran, Iran",
@@ -224,7 +223,6 @@ const translations = {
       email: "sales@asiasayesh.com",
     },
     footer: {
-      companyName: "آسیا سایش",
       companyDesc: "تامین کننده حرفه‌ای راه‌حل‌های پولیش صنعتی.",
       address:
         "ایران، تهران، خیابان امام خمینی، کوچه سلطانی، پاساژ جعفری قدیم، طبقه اول، پلاک ۵",
@@ -520,8 +518,9 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div>
-                <h4 className="text-lg font-bold mb-4">
-                  {t.footer.companyName}
+                <h4 className="text-lg font-bold mb-4 tracking-tighter">
+                  <span className="text-primary">{isRTL ? "آسیا" : "Asia"}</span>{" "}
+                  {t.nav.brand}
                 </h4>
                 <p className="text-muted-foreground">{t.footer.companyDesc}</p>
               </div>
