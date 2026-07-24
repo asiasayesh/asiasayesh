@@ -46,9 +46,9 @@ const translations = {
           learnMore: "Learn More",
         },
         {
-          name: "Abrasive Flap Discs",
+          name: "Abrasive Non-Woven Flap Discs",
           description:
-            "Flap discs for grinding, blending, and finishing metal with angle grinders.",
+            "Non-woven flap discs for cleaning, blending, and satin finishing metal with angle grinders.",
           learnMore: "Learn More",
         },
         {
@@ -105,10 +105,10 @@ const translations = {
       description:
         "Contact our sales team today to discuss your specific needs and get a custom quote.",
       callTitle: "Call Us",
-      callAvailability: "Available Monday to Friday, 9am-5pm",
+      callAvailability: "Available Saturday to Friday, 9am-5pm",
       callNumber: "+98 912 132 7308",
       emailTitle: "Email Us",
-      emailAvailability: "We'll respond within 2 business hours",
+      emailAvailability: "We'll respond within 2 business days",
       email: "sales@asiasayesh.com",
     },
     footer: {
@@ -158,9 +158,9 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ دیسک‌های ساینده",
+          name: "فلاپ دیسک‌های اسکاچ ساینده",
           description:
-            "فلاپ دیسک برای سنگ‌زنی، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
+            "فلاپ دیسک اسکاچ برای تمیزکاری، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
           learnMore: "بیشتر بدانید",
         },
         {
@@ -170,9 +170,9 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ ویل پارچه‌ای نان‌وون",
+          name: "فلاپ ویل پارچه‌ای اسکاچ",
           description:
-            "فلاپ ویل نان‌وون برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن بدون خط عمیق.",
+            "فلاپ ویل اسکاچ برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن بدون خط عمیق.",
           learnMore: "بیشتر بدانید",
         },
         {
@@ -182,15 +182,15 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ ویل‌های نان‌وون ساینده",
+          name: "فلاپ ویل‌های اسکاچ ساینده",
           description:
-            "فلاپ ویل نان‌وون توپی برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن روی فلز.",
+            "فلاپ ویل اسکاچ توپی برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن روی فلز.",
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "پدهای دستی نان‌وون",
+          name: "پدهای دستی اسکاچ",
           description:
-            "پدهای انعطاف‌پذیر نان‌وون برای تمیزکاری دستی، مات‌کاری و پرداخت فلز و چوب.",
+            "پدهای انعطاف‌پذیر اسکاچ برای تمیزکاری دستی، مات‌کاری و پرداخت فلز و چوب.",
           learnMore: "بیشتر بدانید",
         },
       ],
@@ -217,10 +217,10 @@ const translations = {
       description:
         "امروز با تیم فروش ما تماس بگیرید تا نیازهای خاص خود را بررسی کنید و پیشنهاد قیمت دریافت کنید.",
       callTitle: "تماس بگیرید",
-      callAvailability: "دوشنبه تا جمعه، ۹ صبح تا ۵ عصر",
+      callAvailability: "شنبه تا جمعه، ۹ صبح تا ۵ عصر",
       callNumber: "+98 912 132 7308",
       emailTitle: "ایمیل بفرستید",
-      emailAvailability: "ما در عرض ۲ ساعت کاری پاسخ خواهیم داد",
+      emailAvailability: "ما در عرض ۲ روز کاری پاسخ خواهیم داد",
       email: "sales@asiasayesh.com",
     },
     footer: {
@@ -277,10 +277,11 @@ export default function Home() {
       },
       {
         "@type": "Product",
-        name: "Abrasive Flap Discs",
+        name: "Abrasive Non-Woven Flap Discs",
         description:
-          "Flap discs for grinding, blending, and finishing metal with angle grinders.",
-        image: "https://asiasayesh.com/products/product-abrasive-flap-discs.jpg",
+          "Non-woven flap discs for cleaning, blending, and satin finishing metal with angle grinders.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-non-woven-flap-discs.jpg",
       },
       {
         "@type": "Product",
@@ -457,7 +458,7 @@ export default function Home() {
                           "/products/product-abrasive-cylinders.jpg",
                           "/products/product-mounted-flap-wheels.jpg",
                           "/products/product-abrasive-sanding-belts.jpg",
-                          "/products/product-abrasive-flap-discs.jpg",
+                          "/products/product-abrasive-non-woven-flap-discs.jpg",
                           "/products/product-abrasive-cartridge-roll.jpg",
                           "/products/product-non-woven-abrasive-cloth-flap-wheels.jpg",
                           "/products/product-abrasive-flap-wheels.jpg",
