@@ -15,7 +15,7 @@ const translations = {
       callNow: "Call Now",
     },
     hero: {
-      badge: "Industrial Excellence",
+      badge: "First Manufacturer in Iran",
       title: "Professional Abrasive Solutions for Every Industry",
       description:
         "From precision fine polishing, our industrial-grade abrasive products deliver consistent results and unmatched durability.",
@@ -91,7 +91,7 @@ const translations = {
       callNow: "تماس بگیرید",
     },
     hero: {
-      badge: "تعالی صنعتی",
+      badge: "اولین تولیدکننده در ایران",
       title: "راه‌حل‌های پولیش حرفه‌ای برای هر صنعتی",
       description:
         "از پولیش‌کاری دقیق و ظریف، محصولات پولیش درجه صنعتی ما نتایج ثابت و دوام بی‌نظیری را ارائه می‌دهند.",
