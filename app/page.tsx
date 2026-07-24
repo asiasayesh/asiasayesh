@@ -48,7 +48,7 @@ const translations = {
         {
           name: "Abrasive Flap Discs",
           description:
-            "Cloth flap discs for grinding, blending, and finishing metal with angle grinders.",
+            "Abrasive and non-woven flap discs for finishing and blending large surfaces on metals, wood, and alloy products. Can be combined with abrasive cloth upon customer request.",
           learnMore: "Learn More",
         },
         {
@@ -159,7 +159,7 @@ const translations = {
         {
           name: "فلاپ دیسک‌های ساینده",
           description:
-            "فلاپ دیسک پارچه‌ای برای سنگ‌زنی، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
+            "فلاپ دیسک ساینده و فلاپ دیسک اسکاچ برای پرداخت‌کاری و یکنواخت‌سازی سطوح بزرگ اعم از فلزات، چوب و مصنوعات آلیاژی. این محصول بنا به درخواست مصرف‌کننده می‌تواند با سمباده ترکیب شود.",
           learnMore: "بیشتر بدانید",
         },
         {
