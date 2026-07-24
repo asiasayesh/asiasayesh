@@ -412,14 +412,14 @@ export default function Home() {
               {t.products.items.map((product, idx) => (
                 <article
                   key={idx}
-                  className="card-hover group rounded-lg border-2 border-border bg-background overflow-hidden hover:border-primary/50 transition-all duration-300"
+                  className="card-hover group rounded-lg border-2 border-border bg-background overflow-hidden transition-all duration-300"
                 >
                   <div className="relative h-64 overflow-hidden bg-card">
                     <Image
                       src={`/products/${productImages[idx]}`}
                       alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
                       fill
-                      className="card-hover-media object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="card-hover-media object-cover transition-transform duration-300"
                     />
                   </div>
                   <div className="p-6 space-y-3">
@@ -447,7 +447,7 @@ export default function Home() {
               {t.features.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="card-hover p-8 rounded-lg border-2 border-border bg-card/50 hover:border-primary/50 transition-colors"
+                  className="card-hover p-8 rounded-lg border-2 border-border bg-card/50 transition-colors"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">✓</span>
