@@ -105,7 +105,7 @@ const translations = {
       description:
         "Contact our sales team today to discuss your specific needs and get a custom quote.",
       callTitle: "Call Us",
-      callAvailability: "Available Saturday to Friday, 9am-5pm",
+      callAvailability: "Available Saturday to Wednesday, 9am-5pm",
       callNumber: "+98 912 132 7308",
       emailTitle: "Email Us",
       emailAvailability: "We'll respond within 2 business days",
@@ -217,7 +217,7 @@ const translations = {
       description:
         "امروز با تیم فروش ما تماس بگیرید تا نیازهای خاص خود را بررسی کنید و پیشنهاد قیمت دریافت کنید.",
       callTitle: "تماس بگیرید",
-      callAvailability: "شنبه تا جمعه، ۹ صبح تا ۵ عصر",
+      callAvailability: "شنبه تا چهارشنبه، ۹ صبح تا ۵ عصر",
       callNumber: "+98 912 132 7308",
       emailTitle: "ایمیل بفرستید",
       emailAvailability: "ما در عرض ۲ روز کاری پاسخ خواهیم داد",
@@ -241,90 +241,40 @@ const phones = [
 
 const callHref = phones[2].href;
 
+const productImages = [
+  "product-abrasive-cylinders.jpg",
+  "product-mounted-flap-wheels.jpg",
+  "product-abrasive-sanding-belts.jpg",
+  "product-abrasive-non-woven-flap-discs.jpg",
+  "product-abrasive-cartridge-roll.jpg",
+  "product-non-woven-abrasive-cloth-flap-wheels.jpg",
+  "product-abrasive-flap-wheels.jpg",
+  "product-non-woven-abrasive-flap-wheels.jpg",
+  "product-abrasive-non-woven-hand-pads.jpg",
+];
+
+const brand = { "@type": "Brand", name: "AsiaSayesh" };
+
+const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: translations.en.products.items.map((product, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      image: `https://asiasayesh.com/products/${productImages[i]}`,
+      brand,
+    },
+  })),
+};
+
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
   const t = translations[language];
   const isRTL = language === "fa";
-
-  // Structured data for products
-  const productJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: [
-      {
-        "@type": "Product",
-        name: "Abrasive Cylinders",
-        description:
-          "Cylindrical sanding sleeves for contour work, deburring, and finishing on curved surfaces.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-cylinders.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Mounted Flap Wheels",
-        description:
-          "Shank-mounted abrasive flaps for deburring, blending, and finishing on contoured metal surfaces.",
-        image:
-          "https://asiasayesh.com/products/product-mounted-flap-wheels.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Abrasive Sanding Belts",
-        description:
-          "Endless abrasive belts for stock removal, grinding, and surface finishing on metal and wood.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-sanding-belts.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Abrasive Non-Woven Flap Discs",
-        description:
-          "Non-woven flap discs for cleaning, blending, and satin finishing metal with angle grinders.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-non-woven-flap-discs.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Abrasive Cartridge Rolls",
-        description:
-          "Spiral-wound cartridge rolls for deburring and finishing holes, corners, and tight spaces.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-cartridge-roll.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Non-Woven Cloth Flap Wheels",
-        description:
-          "Non-woven flap wheels for cleaning, blending, and satin finishing without deep scratches.",
-        image:
-          "https://asiasayesh.com/products/product-non-woven-abrasive-cloth-flap-wheels.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Abrasive Flap Wheels",
-        description:
-          "Cloth flap wheels for grinding, blending, and finishing flat and contoured surfaces.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-flap-wheels.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Non-Woven Abrasive Flap Wheels",
-        description:
-          "Non-woven hub flap wheels for cleaning, blending, and satin finishing on metal.",
-        image:
-          "https://asiasayesh.com/products/product-non-woven-abrasive-flap-wheels.jpg",
-      },
-      {
-        "@type": "Product",
-        name: "Non-Woven Hand Pads",
-        description:
-          "Flexible non-woven pads for hand cleaning, scuffing, and finishing on metal and wood.",
-        image:
-          "https://asiasayesh.com/products/product-abrasive-non-woven-hand-pads.jpg",
-      },
-    ],
-  };
 
   return (
     <>
@@ -460,19 +410,7 @@ export default function Home() {
                 >
                   <div className="relative h-64 overflow-hidden bg-card">
                     <Image
-                      src={
-                        [
-                          "/products/product-abrasive-cylinders.jpg",
-                          "/products/product-mounted-flap-wheels.jpg",
-                          "/products/product-abrasive-sanding-belts.jpg",
-                          "/products/product-abrasive-non-woven-flap-discs.jpg",
-                          "/products/product-abrasive-cartridge-roll.jpg",
-                          "/products/product-non-woven-abrasive-cloth-flap-wheels.jpg",
-                          "/products/product-abrasive-flap-wheels.jpg",
-                          "/products/product-non-woven-abrasive-flap-wheels.jpg",
-                          "/products/product-abrasive-non-woven-hand-pads.jpg",
-                        ][idx]
-                      }
+                      src={`/products/${productImages[idx]}`}
                       alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"

@@ -1,22 +1,5 @@
 # AsiaSayesh - Robots Configuration
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /_next
-Disallow: /api
 
-# Sitemaps
 Sitemap: https://asiasayesh.com/sitemap.xml
-Sitemap: https://asiasayesh.com/sitemap-fa.xml
-
-# Crawl delay (optional)
-Crawl-delay: 0
-
-# Allow specific crawlers
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0

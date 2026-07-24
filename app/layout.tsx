@@ -24,14 +24,13 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://asiasayesh.com"),
   alternates: {
-    languages: {
-      en: "https://asiasayesh.com",
-      fa: "https://asiasayesh.com/fa",
-    },
+    canonical: "https://asiasayesh.com",
   },
   openGraph: {
     type: "website",
+    locale: "en_US",
     url: "https://asiasayesh.com",
+    siteName: "AsiaSayesh",
     title: "AsiaSayesh | Premium Industrial Abrasive Products",
     description:
       "Professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.",
@@ -103,15 +102,18 @@ export default function RootLayout({
     url: "https://asiasayesh.com",
     logo: "https://asiasayesh.com/logo.png",
     description: "Leading provider of industrial abrasive solutions.",
-    sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
-      contactType: "Sales",
+      contactType: "sales",
       telephone: "+989121327308",
       email: "sales@asiasayesh.com",
+      availableLanguage: ["English", "Persian"],
     },
     address: {
       "@type": "PostalAddress",
+      streetAddress:
+        "Emam Khomeini Av, Soltani Alley, Old Jafari Mall, 1st floor, number 5",
+      addressLocality: "Tehran",
       addressCountry: "IR",
     },
   };
