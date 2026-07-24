@@ -332,7 +332,7 @@ export default function Home() {
                 type="button"
                 dir="ltr"
                 onClick={() => setLanguage(language === "en" ? "fa" : "en")}
-                className="inline-flex items-center justify-center gap-2 h-9 px-3 rounded-lg border border-border hover:border-primary/50 transition-colors font-sans leading-none"
+                className="inline-flex items-center justify-center gap-2 h-9 px-3 rounded-lg border-2 border-border hover:border-primary/50 transition-colors font-sans leading-none"
                 aria-label="Toggle language"
               >
                 <Globe size={16} className="shrink-0" aria-hidden />
@@ -352,7 +352,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Hero Content */}
             <div className={`space-y-6 ${isRTL ? "lg:col-start-2" : ""}`}>
-              <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary">
+              <div className="inline-block px-3 py-1 bg-primary/10 border-2 border-primary/20 rounded-full text-sm text-primary">
                 {t.hero.badge}
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-balance">
@@ -371,7 +371,7 @@ export default function Home() {
                 </a>
                 <a
                   href="mailto:sales@asiasayesh.com"
-                  className="flex items-center justify-center gap-2 px-6 py-3 border border-primary/40 rounded-lg hover:border-primary hover:bg-primary/5 transition-colors font-semibold"
+                  className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary/40 rounded-lg hover:border-primary hover:bg-primary/5 transition-colors font-semibold"
                 >
                   <Mail size={20} />
                   {t.hero.emailSales}
@@ -381,7 +381,7 @@ export default function Home() {
 
             {/* Hero Image */}
             <div
-              className={`relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden border border-border ${isRTL ? "lg:col-start-1" : ""}`}
+              className={`relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden border-2 border-border ${isRTL ? "lg:col-start-1" : ""}`}
             >
               <Image
                 src="/hero-abrasives.jpg"
@@ -412,7 +412,7 @@ export default function Home() {
               {t.products.items.map((product, idx) => (
                 <article
                   key={idx}
-                  className="group rounded-lg border border-border bg-background overflow-hidden hover:border-primary/50 transition-all duration-300"
+                  className="group rounded-lg border-2 border-border bg-background overflow-hidden hover:border-primary/50 transition-all duration-300"
                 >
                   <div className="relative h-64 overflow-hidden bg-card">
                     <Image
@@ -447,7 +447,7 @@ export default function Home() {
               {t.features.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="p-8 rounded-lg border border-border bg-card/50 hover:border-primary/50 transition-colors"
+                  className="p-8 rounded-lg border-2 border-border bg-card/50 hover:border-primary/50 transition-colors"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">✓</span>
@@ -474,7 +474,7 @@ export default function Home() {
               {/* Phone CTA */}
               <a
                 href={callHref}
-                className="p-8 rounded-lg border border-primary/40 bg-background hover:bg-primary/5 transition-all group"
+                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 transition-all group"
               >
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Phone size={32} className="text-primary" />
@@ -494,7 +494,7 @@ export default function Home() {
               {/* Email CTA */}
               <a
                 href="mailto:sales@asiasayesh.com"
-                className="p-8 rounded-lg border border-primary/40 bg-background hover:bg-primary/5 transition-all group"
+                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 transition-all group"
               >
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Mail size={32} className="text-primary" />
@@ -514,7 +514,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t border-border py-12 px-4">
+        <footer className="border-t-2 border-border py-12 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div>
@@ -566,7 +566,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border-t border-border pt-8 text-center">
+            <div className="border-t-2 border-border pt-8 text-center">
               <p className="text-sm text-muted-foreground">
                 {t.footer.copyright}
               </p>
