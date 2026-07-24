@@ -45,6 +45,42 @@ const translations = {
             "Endless abrasive belts for stock removal, grinding, and surface finishing on metal and wood.",
           learnMore: "Learn More",
         },
+        {
+          name: "Abrasive Flap Discs",
+          description:
+            "Flap discs for grinding, blending, and finishing metal with angle grinders.",
+          learnMore: "Learn More",
+        },
+        {
+          name: "Abrasive Cartridge Rolls",
+          description:
+            "Spiral-wound cartridge rolls for deburring and finishing holes, corners, and tight spaces.",
+          learnMore: "Learn More",
+        },
+        {
+          name: "Non-Woven Cloth Flap Wheels",
+          description:
+            "Non-woven flap wheels for cleaning, blending, and satin finishing without deep scratches.",
+          learnMore: "Learn More",
+        },
+        {
+          name: "Abrasive Flap Wheels",
+          description:
+            "Cloth flap wheels for grinding, blending, and finishing flat and contoured surfaces.",
+          learnMore: "Learn More",
+        },
+        {
+          name: "Non-Woven Abrasive Flap Wheels",
+          description:
+            "Non-woven hub flap wheels for cleaning, blending, and satin finishing on metal.",
+          learnMore: "Learn More",
+        },
+        {
+          name: "Non-Woven Hand Pads",
+          description:
+            "Flexible non-woven pads for hand cleaning, scuffing, and finishing on metal and wood.",
+          learnMore: "Learn More",
+        },
       ],
     },
     features: [
@@ -119,6 +155,42 @@ const translations = {
           name: "نوارهای سنباده‌ای",
           description:
             "نوارهای بی‌انتها برای براده‌برداری، سنگ‌زنی و پرداخت سطح روی فلز و چوب.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "فلاپ دیسک‌های ساینده",
+          description:
+            "فلاپ دیسک برای سنگ‌زنی، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "رول‌های کارتریج ساینده",
+          description:
+            "رول‌های مارپیچ برای پلیسه‌گیری و پرداخت سوراخ‌ها، گوشه‌ها و فضاهای تنگ.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "فلاپ ویل پارچه‌ای نان‌وون",
+          description:
+            "فلاپ ویل نان‌وون برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن بدون خط عمیق.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "فلاپ ویل‌های ساینده",
+          description:
+            "فلاپ ویل پارچه‌ای برای سنگ‌زنی، یکنواخت‌سازی و پرداخت سطوح صاف و منحنی.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "فلاپ ویل‌های نان‌وون ساینده",
+          description:
+            "فلاپ ویل نان‌وون توپی برای تمیزکاری، یکنواخت‌سازی و پرداخت ساتن روی فلز.",
+          learnMore: "بیشتر بدانید",
+        },
+        {
+          name: "پدهای دستی نان‌وون",
+          description:
+            "پدهای انعطاف‌پذیر نان‌وون برای تمیزکاری دستی، مات‌کاری و پرداخت فلز و چوب.",
           learnMore: "بیشتر بدانید",
         },
       ],
@@ -203,6 +275,53 @@ export default function Home() {
         image:
           "https://asiasayesh.com/products/product-abrasive-sanding-belts.jpg",
       },
+      {
+        "@type": "Product",
+        name: "Abrasive Flap Discs",
+        description:
+          "Flap discs for grinding, blending, and finishing metal with angle grinders.",
+        image: "https://asiasayesh.com/products/product-abrasive-flap-discs.jpg",
+      },
+      {
+        "@type": "Product",
+        name: "Abrasive Cartridge Rolls",
+        description:
+          "Spiral-wound cartridge rolls for deburring and finishing holes, corners, and tight spaces.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-cartridge-roll.jpg",
+      },
+      {
+        "@type": "Product",
+        name: "Non-Woven Cloth Flap Wheels",
+        description:
+          "Non-woven flap wheels for cleaning, blending, and satin finishing without deep scratches.",
+        image:
+          "https://asiasayesh.com/products/product-non-woven-abrasive-cloth-flap-wheels.jpg",
+      },
+      {
+        "@type": "Product",
+        name: "Abrasive Flap Wheels",
+        description:
+          "Cloth flap wheels for grinding, blending, and finishing flat and contoured surfaces.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-flap-wheels.jpg",
+      },
+      {
+        "@type": "Product",
+        name: "Non-Woven Abrasive Flap Wheels",
+        description:
+          "Non-woven hub flap wheels for cleaning, blending, and satin finishing on metal.",
+        image:
+          "https://asiasayesh.com/products/product-non-woven-abrasive-flap-wheels.jpg",
+      },
+      {
+        "@type": "Product",
+        name: "Non-Woven Hand Pads",
+        description:
+          "Flexible non-woven pads for hand cleaning, scuffing, and finishing on metal and wood.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-non-woven-hand-pads.jpg",
+      },
     ],
   };
 
@@ -246,13 +365,15 @@ export default function Home() {
                 </a>
               </div>
               <button
+                type="button"
+                dir="ltr"
                 onClick={() => setLanguage(language === "en" ? "fa" : "en")}
-                className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border hover:border-primary/50 transition-colors"
+                className="inline-flex items-center justify-center gap-2 h-9 px-3 rounded-lg border border-border hover:border-primary/50 transition-colors font-sans leading-none"
                 aria-label="Toggle language"
               >
-                <Globe size={18} />
+                <Globe size={16} className="shrink-0" aria-hidden />
                 <span
-                  className="text-sm font-medium"
+                  className="text-sm font-medium leading-none"
                   lang={language === "en" ? "fa" : "en"}
                 >
                   {language === "en" ? "فارسی" : "EN"}
@@ -323,7 +444,7 @@ export default function Home() {
             </div>
 
             {/* Product Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {t.products.items.map((product, idx) => (
                 <article
                   key={idx}
@@ -336,6 +457,12 @@ export default function Home() {
                           "/products/product-abrasive-cylinders.jpg",
                           "/products/product-mounted-flap-wheels.jpg",
                           "/products/product-abrasive-sanding-belts.jpg",
+                          "/products/product-abrasive-flap-discs.jpg",
+                          "/products/product-abrasive-cartridge-roll.jpg",
+                          "/products/product-non-woven-abrasive-cloth-flap-wheels.jpg",
+                          "/products/product-abrasive-flap-wheels.jpg",
+                          "/products/product-non-woven-abrasive-flap-wheels.jpg",
+                          "/products/product-abrasive-non-woven-hand-pads.jpg",
                         ][idx]
                       }
                       alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
@@ -470,14 +597,18 @@ export default function Home() {
                       ))}
                     </ul>
                   </div>
-                  <p>
+                  <div className="space-y-1">
+                    <p className="text-sm font-medium text-foreground">
+                      {isRTL ? "ایمیل" : "Email"}
+                    </p>
                     <a
                       href="mailto:sales@asiasayesh.com"
                       className="hover:text-primary transition-colors"
+                      dir="ltr"
                     >
-                      {isRTL ? "ایمیل: " : "Email: "} sales@asiasayesh.com
+                      sales@asiasayesh.com
                     </a>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
