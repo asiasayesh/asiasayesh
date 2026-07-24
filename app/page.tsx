@@ -46,9 +46,9 @@ const translations = {
           learnMore: "Learn More",
         },
         {
-          name: "Abrasive Non-Woven Flap Discs",
+          name: "Abrasive Flap Discs",
           description:
-            "Non-woven flap discs for cleaning, blending, and satin finishing metal with angle grinders.",
+            "Cloth flap discs for grinding, blending, and finishing metal with angle grinders.",
           learnMore: "Learn More",
         },
         {
@@ -158,9 +158,9 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ دیسک‌های اسکاچ ساینده",
+          name: "فلاپ دیسک‌های ساینده",
           description:
-            "فلاپ دیسک اسکاچ برای تمیزکاری، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
+            "فلاپ دیسک پارچه‌ای برای سنگ‌زنی، یکنواخت‌سازی و پرداخت فلز با فرز زاویه‌ای.",
           learnMore: "بیشتر بدانید",
         },
         {
@@ -245,7 +245,7 @@ const productImages = [
   "product-abrasive-cylinders.jpg",
   "product-mounted-flap-wheels.jpg",
   "product-abrasive-sanding-belts.jpg",
-  "product-abrasive-non-woven-flap-discs.jpg",
+  "product-abrasive-flap-discs.jpg",
   "product-abrasive-cartridge-roll.jpg",
   "product-non-woven-abrasive-cloth-flap-wheels.jpg",
   "product-abrasive-flap-wheels.jpg",
