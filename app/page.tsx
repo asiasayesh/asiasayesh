@@ -295,8 +295,16 @@ export default function Home() {
                 e.preventDefault()
                 scrollTo({ top: 0, behavior: "smooth" })
               }}
-              className="text-2xl font-bold tracking-tighter"
+              className="inline-flex items-center gap-2 text-2xl font-bold tracking-tighter"
             >
+              <Image
+                src="/logo.png"
+                alt=""
+                width={32}
+                height={32}
+                className="size-8"
+                priority
+              />
               <span className="text-primary">{isRTL ? "آسیا" : "Asia"}</span>{" "}
               {t.nav.brand}
             </a>
