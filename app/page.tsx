@@ -115,7 +115,7 @@ const translations = {
       companyName: "AsiaSayesh",
       companyDesc: "Leading provider of industrial abrasive solutions.",
       address:
-        "Iran, Tehran, Emam Khomeini Av, Soltani Alley, Old Jafari Mall, 1st floor, number 5",
+        "No. 5, 1st floor, Old Jafari Mall, Soltani Alley, Emam Khomeini Ave, Tehran, Iran",
       copyright: "© 2026 AsiaSayesh. All rights reserved.",
     },
   },

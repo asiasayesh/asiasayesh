@@ -113,7 +113,7 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       streetAddress:
-        "Emam Khomeini Av, Soltani Alley, Old Jafari Mall, 1st floor, number 5",
+        "No. 5, 1st floor, Old Jafari Mall, Soltani Alley, Emam Khomeini Ave",
       addressLocality: "Tehran",
       addressCountry: "IR",
     },
