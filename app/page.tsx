@@ -146,9 +146,9 @@ const translations = {
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "فلاپ ویل شافت‌دار",
+          name: "فلاپ ویل شفت‌دار",
           description:
-            "فلاپ‌های ساینده شافت‌دار برای پلیسه‌گیری، یکنواخت‌سازی و پرداخت سطوح فلزی.",
+            "فلاپ‌های ساینده شفت‌دار برای پلیسه‌گیری، یکنواخت‌سازی و پرداخت سطوح فلزی.",
           learnMore: "بیشتر بدانید",
         },
         {
@@ -337,12 +337,19 @@ export default function Home() {
         dir={isRTL ? "rtl" : "ltr"}
       >
         {/* Navigation */}
-        <nav className="fixed top-0 w-full bg-background/95 backdrop-blur border-b border-border z-50">
+        <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tighter">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault()
+                scrollTo({ top: 0, behavior: "smooth" })
+              }}
+              className="text-2xl font-bold tracking-tighter"
+            >
               <span className="text-primary">{isRTL ? "آسیا" : "Asia"}</span>{" "}
               {t.nav.brand}
-            </div>
+            </a>
             <div className="flex gap-3 items-center">
               <div className="hidden md:flex gap-8 items-center">
                 <a
