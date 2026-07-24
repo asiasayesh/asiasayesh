@@ -28,21 +28,21 @@ const translations = {
         "Premium abrasive solutions engineered for precision, durability, and superior performance",
       items: [
         {
-          name: "Grinding Wheels",
+          name: "Abrasive Cylinders",
           description:
-            "Precision-engineered grinding wheels for metal, concrete, and composite materials with extended lifespan.",
+            "Cylindrical sanding sleeves for contour work, deburring, and finishing on curved surfaces.",
           learnMore: "Learn More",
         },
         {
-          name: "Sandpaper & Sheets",
+          name: "Mounted Flap Wheels",
           description:
-            "Industrial-grade sandpaper available in multiple grit sizes for surface preparation and finishing.",
+            "Shank-mounted abrasive flaps for deburring, blending, and finishing on contoured metal surfaces.",
           learnMore: "Learn More",
         },
         {
-          name: "Polishing Compounds",
+          name: "Abrasive Sanding Belts",
           description:
-            "Professional polishing compounds and buffing pads for superior shine and protection on any surface.",
+            "Endless abrasive belts for stock removal, grinding, and surface finishing on metal and wood.",
           learnMore: "Learn More",
         },
       ],
@@ -104,21 +104,21 @@ const translations = {
         "راه‌حل‌های پولیش بسیار باکیفیت برای دقت، دوام و عملکرد برتر",
       items: [
         {
-          name: "چرخ‌های پولیش",
+          name: "سیلندرهای ساینده",
           description:
-            "چرخ‌های پولیش دقیق برای مواد فلزی، بتنی و ترکیبی با طول عمر فراوان.",
+            "باندهای استوانه‌ای برای کار روی سطوح منحنی، پلیسه‌گیری و پرداخت.",
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "کاغذ سنباده و ورق‌ها",
+          name: "فلاپ ویل شافت‌دار",
           description:
-            "سنباده درجه صنعتی در اندازه‌های مختلف برای آماده‌سازی سطح و تمام‌کاری.",
+            "فلاپ‌های ساینده شافت‌دار برای پلیسه‌گیری، یکنواخت‌سازی و پرداخت سطوح فلزی.",
           learnMore: "بیشتر بدانید",
         },
         {
-          name: "ترکیبات صیقل‌کاری",
+          name: "نوارهای سنباده‌ای",
           description:
-            "ترکیبات صیقل‌کاری حرفه‌ای و پد کوبی برای درخشش و حفاظت بسیار بر هر سطحی.",
+            "نوارهای بی‌انتها برای براده‌برداری، سنگ‌زنی و پرداخت سطح روی فلز و چوب.",
           learnMore: "بیشتر بدانید",
         },
       ],
@@ -181,24 +181,27 @@ export default function Home() {
     itemListElement: [
       {
         "@type": "Product",
-        name: "Grinding Wheels",
+        name: "Abrasive Cylinders",
         description:
-          "Precision-engineered grinding wheels for metal, concrete, and composite materials with extended lifespan.",
-        image: "https://asiasayesh.com/product-grinding-wheel.png",
+          "Cylindrical sanding sleeves for contour work, deburring, and finishing on curved surfaces.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-cylinders.jpg",
       },
       {
         "@type": "Product",
-        name: "Sandpaper & Sheets",
+        name: "Mounted Flap Wheels",
         description:
-          "Industrial-grade sandpaper available in multiple grit sizes for surface preparation and finishing.",
-        image: "https://asiasayesh.com/product-sandpaper.png",
+          "Shank-mounted abrasive flaps for deburring, blending, and finishing on contoured metal surfaces.",
+        image:
+          "https://asiasayesh.com/products/product-mounted-flap-wheels.jpg",
       },
       {
         "@type": "Product",
-        name: "Polishing Compounds",
+        name: "Abrasive Sanding Belts",
         description:
-          "Professional polishing compounds and buffing pads for superior shine and protection on any surface.",
-        image: "https://asiasayesh.com/product-polishing.png",
+          "Endless abrasive belts for stock removal, grinding, and surface finishing on metal and wood.",
+        image:
+          "https://asiasayesh.com/products/product-abrasive-sanding-belts.jpg",
       },
     ],
   };
@@ -330,9 +333,9 @@ export default function Home() {
                     <Image
                       src={
                         [
-                          "/product-grinding-wheel.png",
-                          "/product-sandpaper.png",
-                          "/product-polishing.png",
+                          "/products/product-abrasive-cylinders.jpg",
+                          "/products/product-mounted-flap-wheels.jpg",
+                          "/products/product-abrasive-sanding-belts.jpg",
                         ][idx]
                       }
                       alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
