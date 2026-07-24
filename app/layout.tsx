@@ -10,10 +10,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AsiaSayesh | Premium Industrial Abrasive Products & Solutions",
+  title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
   description:
-    "AsiaSayesh provides premium industrial abrasive products including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
+    "AsiaSayesh (آسیا سایش) provides premium industrial abrasive products including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
   keywords: [
+    "AsiaSayesh",
+    "Asia Sayesh",
+    "آسیا سایش",
+    "آسیاسایش",
+    "آسیا",
+    "سایش",
     "abrasive products",
     "grinding wheels",
     "sandpaper",
@@ -21,6 +27,9 @@ export const metadata: Metadata = {
     "industrial abrasives",
     "surface finishing",
     "industrial supplies",
+    "ساینده",
+    "سنباده",
+    "پولیش صنعتی",
   ],
   metadataBase: new URL("https://asiasayesh.com"),
   alternates: {
@@ -29,26 +38,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["fa_IR"],
     url: "https://asiasayesh.com",
-    siteName: "AsiaSayesh",
-    title: "AsiaSayesh | Premium Industrial Abrasive Products",
+    siteName: "AsiaSayesh | آسیا سایش",
+    title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
     description:
-      "Professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.",
+      "AsiaSayesh (آسیا سایش) — professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.",
     images: [
       {
         url: "/og.jpg",
         width: 1731,
         height: 909,
-        alt: "AsiaSayesh Industrial Abrasive Products",
+        alt: "AsiaSayesh | آسیا سایش Industrial Abrasive Products",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AsiaSayesh | Premium Industrial Abrasive Products",
+    title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
     description:
-      "Professional-grade abrasive solutions for industrial manufacturing.",
+      "AsiaSayesh (آسیا سایش) — professional-grade abrasive solutions for industrial manufacturing.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -100,9 +110,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "AsiaSayesh",
+    alternateName: ["آسیا سایش", "آسیاسایش", "Asia Sayesh"],
     url: "https://asiasayesh.com",
     logo: "https://asiasayesh.com/logo.png",
-    description: "Leading provider of industrial abrasive solutions.",
+    description:
+      "AsiaSayesh (آسیا سایش) — leading provider of industrial abrasive solutions.",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
