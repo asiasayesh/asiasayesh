@@ -160,7 +160,8 @@
   body {
     @apply bg-background text-foreground;
   }
-  [dir='rtl'] {
+  [dir='rtl'],
+  :lang(fa) {
     font-family: 'Vazirmatn', var(--font-sans), sans-serif;
   }
 }

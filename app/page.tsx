@@ -208,7 +208,9 @@ export default function Home() {
               aria-label="Toggle language"
             >
               <Globe size={18} />
-              <span className="text-sm font-medium">{language === 'en' ? 'فارسی' : 'EN'}</span>
+              <span className="text-sm font-medium" lang={language === 'en' ? 'fa' : 'en'}>
+                {language === 'en' ? 'فارسی' : 'EN'}
+              </span>
             </button>
           </div>
         </div>
