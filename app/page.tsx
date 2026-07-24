@@ -412,14 +412,14 @@ export default function Home() {
               {t.products.items.map((product, idx) => (
                 <article
                   key={idx}
-                  className="card-hover group rounded-lg border-2 border-border bg-background overflow-hidden transition-all duration-300"
+                  className="group rounded-lg border-2 border-border bg-background overflow-hidden hover:border-primary/50 transition-all duration-300"
                 >
                   <div className="relative h-64 overflow-hidden bg-card">
                     <Image
                       src={`/products/${productImages[idx]}`}
                       alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
                       fill
-                      className="card-hover-media object-cover transition-transform duration-300"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-6 space-y-3">
@@ -447,7 +447,7 @@ export default function Home() {
               {t.features.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="card-hover p-8 rounded-lg border-2 border-border bg-card/50 transition-colors"
+                  className="p-8 rounded-lg border-2 border-border bg-card/50 hover:border-primary/50 transition-colors"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">✓</span>
@@ -474,9 +474,9 @@ export default function Home() {
               {/* Phone CTA */}
               <a
                 href={callHref}
-                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 active:bg-primary/5 transition-all group"
+                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 active:bg-primary/5 transition-colors group"
               >
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 group-active:bg-primary/20 transition-colors">
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Phone size={32} className="text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">{t.cta.callTitle}</h3>
@@ -494,9 +494,9 @@ export default function Home() {
               {/* Email CTA */}
               <a
                 href="mailto:sales@asiasayesh.com"
-                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 active:bg-primary/5 transition-all group"
+                className="p-8 rounded-lg border-2 border-primary/40 bg-background hover:bg-primary/5 active:bg-primary/5 transition-colors group"
               >
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 group-active:bg-primary/20 transition-colors">
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Mail size={32} className="text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">{t.cta.emailTitle}</h3>

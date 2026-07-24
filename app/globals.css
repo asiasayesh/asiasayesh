@@ -167,11 +167,21 @@
 }
 
 @media (hover: hover) {
-  .card-hover:hover {
-    border-color: color-mix(in oklch, var(--primary) 50%, transparent);
+  .card-hover {
+    transition:
+      border-color 0.3s,
+      background-color 0.3s;
+
+    &:hover {
+      border-color: color-mix(in oklch, var(--primary) 50%, transparent);
+
+      .card-hover-media {
+        scale: 1.05;
+      }
+    }
   }
 
-  .card-hover:hover .card-hover-media {
-    scale: 1.05;
+  .card-hover-media {
+    transition: scale 0.3s;
   }
 }
