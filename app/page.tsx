@@ -54,7 +54,7 @@ const translations = {
         {
           name: "Abrasive Cartridge Rolls",
           description:
-            "Spiral-wound cartridge rolls for deburring and finishing holes, corners, and tight spaces.",
+            "Spiral and cylindrical cone-shaped abrasive rolls for deburring and finishing holes, corners, and tight spaces.",
           learnMore: "Learn More",
         },
         {
@@ -66,7 +66,7 @@ const translations = {
         {
           name: "Abrasive Flap Wheels",
           description:
-            "Cloth flap wheels for grinding, blending, and finishing flat and contoured surfaces.",
+            "Cloth flap wheels for finishing and blending flat and contoured surfaces.",
           learnMore: "Learn More",
         },
         {
@@ -165,7 +165,7 @@ const translations = {
         {
           name: "رول‌های کارتریج ساینده",
           description:
-            "رول‌های مارپیچ برای پلیسه‌گیری و پرداخت سوراخ‌ها، گوشه‌ها و فضاهای تنگ.",
+            "سمباده‌های کاجی‌شکل مارپیچ و استوانه‌ای برای پلیسه‌گیری و پرداخت سوراخ‌ها، گوشه‌ها و فضاهای تنگ کاربرد دارد.",
           learnMore: "بیشتر بدانید",
         },
         {
@@ -177,7 +177,7 @@ const translations = {
         {
           name: "فلاپ ویل‌های ساینده",
           description:
-            "فلاپ ویل پارچه‌ای برای سنگ‌زنی، یکنواخت‌سازی و پرداخت سطوح صاف و منحنی.",
+            "فلاپ ویل پارچه‌ای برای پرداخت و یکنواخت‌سازی سطوح صاف و منحنی کاربرد دارد.",
           learnMore: "بیشتر بدانید",
         },
         {
