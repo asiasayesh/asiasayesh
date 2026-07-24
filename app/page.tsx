@@ -9,7 +9,7 @@ type Language = 'en' | 'fa'
 const translations = {
   en: {
     nav: {
-      brand: 'AsiaSayesh',
+      brand: 'Sayesh',
       products: 'Products',
       contact: 'Contact',
       callNow: 'Call Now',
