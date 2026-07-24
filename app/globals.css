@@ -165,3 +165,39 @@
     font-family: 'Vazirmatn', var(--font-sans), sans-serif;
   }
 }
+
+@keyframes card-focus {
+  0%,
+  100% {
+    border-color: var(--border);
+  }
+  35%,
+  65% {
+    border-color: color-mix(in oklch, var(--primary) 50%, transparent);
+  }
+}
+
+@keyframes card-media-focus {
+  0%,
+  100% {
+    scale: 1;
+  }
+  35%,
+  65% {
+    scale: 1.05;
+  }
+}
+
+@media (hover: none) {
+  .card-hover {
+    animation: card-focus linear both;
+    animation-timeline: view();
+    animation-range: cover;
+  }
+
+  .card-hover-media {
+    animation: card-media-focus linear both;
+    animation-timeline: view();
+    animation-range: cover;
+  }
+}
