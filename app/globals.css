@@ -162,8 +162,16 @@
     @apply bg-background text-foreground;
     touch-action: manipulation;
   }
-  [dir='rtl'],
-  :lang(fa) {
+  [dir='rtl'] {
+    font-family: var(--font-fa), var(--font-sans), sans-serif;
+  }
+  .font-fa-deferred {
+    animation: fa-deferred 1ms 2s forwards;
+  }
+}
+
+@keyframes fa-deferred {
+  to {
     font-family: var(--font-fa), var(--font-sans), sans-serif;
   }
 }

@@ -65,7 +65,7 @@ export function Nav({ t, lang, setLang }) {
           >
             <Globe size={16} className="shrink-0" aria-hidden />
             <span
-              className="text-sm font-medium leading-none"
+              className="font-fa-deferred text-sm font-medium leading-none"
               lang={lang === "en" ? "fa" : "en"}
             >
               {lang === "en" ? "فارسی" : "EN"}
