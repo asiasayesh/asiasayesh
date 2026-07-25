@@ -149,6 +149,7 @@ export function Products({ t }) {
                   src={`/products/${product.image}`}
                   alt={`${product.name} - Industrial abrasive product from AsiaSayesh`}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
