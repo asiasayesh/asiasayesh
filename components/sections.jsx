@@ -10,6 +10,14 @@ export function JsonLd({ data }) {
   );
 }
 
+function BrandMark({ t }) {
+  return (
+    <span>
+      <span className="text-primary">{t.brandAccent}</span>{t.brandRest}
+    </span>
+  );
+}
+
 export function Nav({ t, lang, setLang }) {
   return (
     <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md z-50">
@@ -18,6 +26,7 @@ export function Nav({ t, lang, setLang }) {
           type="button"
           onClick={() => scrollTo({ top: 0, behavior: "smooth" })}
           className="inline-flex items-center gap-2 text-2xl font-bold tracking-tighter"
+          aria-label={t.brand}
         >
           <Image
             src="/logo.png"
@@ -27,7 +36,7 @@ export function Nav({ t, lang, setLang }) {
             className="size-8"
             priority
           />
-          <span className="text-primary">{t.brandLabel}</span> {t.nav.brand}
+          <BrandMark t={t} />
         </button>
         <div className="flex gap-3 items-center">
           <div className="hidden md:flex gap-8 items-center">
@@ -240,7 +249,7 @@ export function Footer({ t }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           <div>
             <h4 className="text-lg font-bold mb-4 tracking-tighter">
-              <span className="text-primary">{t.brandLabel}</span> {t.nav.brand}
+              <BrandMark t={t} />
             </h4>
             <p className="text-muted-foreground">{t.footer.companyDesc}</p>
           </div>

@@ -11,16 +11,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
+  title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
   description:
-    "AsiaSayesh (آسیا سایش) is the leading provider of premium industrial abrasive products in Iran, including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
+    "AsiaSayesh (آسیاسایش) is the leading provider of premium industrial abrasive products in Iran, including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
   keywords: [
     "AsiaSayesh",
+    "آسیاسایش",
     "Asia Sayesh",
     "آسیا سایش",
-    "آسیاسایش",
-    "آسیا",
-    "سایش",
     "abrasive products",
     "grinding wheels",
     "sandpaper",
@@ -42,25 +40,25 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: ["fa_IR"],
     url: "https://asiasayesh.com",
-    siteName: "AsiaSayesh | آسیا سایش",
-    title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
+    siteName: "AsiaSayesh | آسیاسایش",
+    title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیا سایش) — leading professional-grade abrasive solutions in Iran. Grinding wheels, sandpaper, and polishing compounds.",
+      "AsiaSayesh (آسیاسایش) — leading professional-grade abrasive solutions in Iran. Grinding wheels, sandpaper, and polishing compounds.",
     images: [
       {
         url: "/og.jpg",
         width: 1731,
         height: 909,
-        alt: "AsiaSayesh | آسیا سایش Industrial Abrasive Products",
+        alt: "AsiaSayesh | آسیاسایش Industrial Abrasive Products",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
+    title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیا سایش) — leading professional-grade abrasive solutions in Iran for industrial manufacturing.",
+      "AsiaSayesh (آسیاسایش) — leading professional-grade abrasive solutions in Iran for industrial manufacturing.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -112,11 +110,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "AsiaSayesh",
-    alternateName: ["آسیا سایش", "آسیاسایش", "Asia Sayesh"],
+    alternateName: ["آسیاسایش", "آسیا سایش", "Asia Sayesh"],
     url: "https://asiasayesh.com",
     logo: "https://asiasayesh.com/logo.png",
     description:
-      "AsiaSayesh (آسیا سایش) — leading provider of industrial abrasive solutions in Iran.",
+      "AsiaSayesh (آسیاسایش) — leading provider of industrial abrasive solutions in Iran.",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
