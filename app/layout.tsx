@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Vazirmatn } from "next/font/google";
 import { products } from "@/lib/content";
 import "./globals.css";
 
@@ -8,6 +8,13 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-sans",
+});
+
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fa",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -129,18 +136,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`bg-background ${poppins.variable}`}>
+    <html
+      lang="en"
+      className={`bg-background ${poppins.variable} ${vazirmatn.variable}`}
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

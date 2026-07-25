@@ -164,7 +164,7 @@
   }
   [dir='rtl'],
   :lang(fa) {
-    font-family: 'Vazirmatn', var(--font-sans), sans-serif;
+    font-family: var(--font-fa), var(--font-sans), sans-serif;
   }
 }
 
