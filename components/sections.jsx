@@ -34,7 +34,6 @@ export function Nav({ t, lang, setLang }) {
             width={32}
             height={32}
             className="size-8"
-            priority
           />
           <BrandMark t={t} />
         </button>
@@ -117,7 +116,8 @@ export function Hero({ t }) {
             alt="Industrial abrasive manufacturing"
             fill
             className="object-cover"
-            priority
+            preload
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />
         </div>
