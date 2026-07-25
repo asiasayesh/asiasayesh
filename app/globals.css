@@ -153,6 +153,11 @@
   }
 }
 
+html {
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
