@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Vazirmatn } from "next/font/google";
-import { products } from "@/lib/content";
+import { address, products } from "@/lib/content";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -128,10 +128,9 @@ export default function RootLayout({
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress:
-        "No. 5, 1st Floor, Old Jafari Mall, Soltani Alley, Emam Khomeini Ave.",
-      addressLocality: "Tehran",
-      addressCountry: "IR",
+      streetAddress: address.street,
+      addressLocality: address.locality,
+      addressCountry: address.countryCode,
     },
   };
 
