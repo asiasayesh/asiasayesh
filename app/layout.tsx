@@ -15,6 +15,7 @@ const vazirmatn = Vazirmatn({
   weight: ["400", "500", "600", "700"],
   variable: "--font-fa",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
