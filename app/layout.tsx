@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
   description:
-    "AsiaSayesh (آسیاسایش) is the leading provider of premium industrial abrasive products in Iran, including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
+    "AsiaSayesh (آسیاسایش): premium industrial abrasives in Iran. Grinding wheels, sandpaper, and polishing products.",
   keywords: [
     "AsiaSayesh",
     "آسیاسایش",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "abrasive products",
     "grinding wheels",
     "sandpaper",
-    "polishing compounds",
+    "polishing products",
     "industrial abrasives",
     "surface finishing",
     "industrial supplies",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "AsiaSayesh | آسیاسایش",
     title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیاسایش) — leading professional-grade abrasive solutions in Iran. Grinding wheels, sandpaper, and polishing compounds.",
+      "Premium industrial abrasives from AsiaSayesh. Grinding wheels, sandpaper, and polishing products.",
     images: [
       {
         url: "/og.jpg",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیاسایش) — leading professional-grade abrasive solutions in Iran for industrial manufacturing.",
+      "Premium industrial abrasives from AsiaSayesh. Grinding wheels, sandpaper, and polishing products.",
     images: ["/og.jpg"],
   },
   robots: {
