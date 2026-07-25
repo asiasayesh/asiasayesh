@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import { products } from "@/lib/content";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -12,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
   description:
-    "AsiaSayesh (آسیا سایش) provides premium industrial abrasive products including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
+    "AsiaSayesh (آسیا سایش) is the leading provider of premium industrial abrasive products in Iran, including grinding wheels, sandpaper, and polishing compounds. Professional-grade solutions for manufacturing and industrial applications.",
   keywords: [
     "AsiaSayesh",
     "Asia Sayesh",
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     "ساینده",
     "سنباده",
     "پولیش صنعتی",
+    ...products.flatMap(({ en, fa }) => [en.name, fa.name]),
   ],
   metadataBase: new URL("https://asiasayesh.com"),
   alternates: {
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "AsiaSayesh | آسیا سایش",
     title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیا سایش) — professional-grade abrasive solutions for industrial applications. Grinding wheels, sandpaper, and polishing compounds.",
+      "AsiaSayesh (آسیا سایش) — leading professional-grade abrasive solutions in Iran. Grinding wheels, sandpaper, and polishing compounds.",
     images: [
       {
         url: "/og.jpg",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AsiaSayesh | آسیا سایش | Premium Industrial Abrasive Products",
     description:
-      "AsiaSayesh (آسیا سایش) — professional-grade abrasive solutions for industrial manufacturing.",
+      "AsiaSayesh (آسیا سایش) — leading professional-grade abrasive solutions in Iran for industrial manufacturing.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -114,7 +116,7 @@ export default function RootLayout({
     url: "https://asiasayesh.com",
     logo: "https://asiasayesh.com/logo.png",
     description:
-      "AsiaSayesh (آسیا سایش) — leading provider of industrial abrasive solutions.",
+      "AsiaSayesh (آسیا سایش) — leading provider of industrial abrasive solutions in Iran.",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
