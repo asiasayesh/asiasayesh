@@ -269,7 +269,7 @@ export function Footer({ t }) {
                     <li key={href}>
                       <a
                         href={href}
-                        className="hover:text-primary transition-colors"
+                        className="underline decoration-dotted decoration-muted-foreground/55 underline-offset-4 transition-colors hover:text-primary hover:decoration-primary"
                       >
                         {label}
                       </a>
@@ -283,7 +283,7 @@ export function Footer({ t }) {
                 </p>
                 <a
                   href={`mailto:${t.email}`}
-                  className="hover:text-primary transition-colors"
+                  className="underline decoration-dotted decoration-muted-foreground/55 underline-offset-4 transition-colors hover:text-primary hover:decoration-primary"
                   dir="ltr"
                 >
                   {t.email}
