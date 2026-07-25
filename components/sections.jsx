@@ -112,7 +112,7 @@ export function Hero({ t }) {
           className={`relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden border-2 border-border ${t.isRTL ? "lg:col-start-1" : ""}`}
         >
           <Image
-            src="/hero-abrasives.jpg"
+            src="/hero-abrasives.webp"
             alt="Industrial abrasive manufacturing"
             fill
             className="object-cover"
