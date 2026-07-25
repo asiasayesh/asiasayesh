@@ -30,7 +30,7 @@ export function Nav({ t, lang, setLang }) {
         >
           <Image
             src="/logo.png"
-            alt=""
+            alt={t.brand}
             width={32}
             height={32}
             className="size-8"

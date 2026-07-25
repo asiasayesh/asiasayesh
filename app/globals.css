@@ -166,7 +166,7 @@
     font-family: var(--font-fa), var(--font-sans), sans-serif;
   }
   .font-fa-deferred {
-    animation: fa-deferred 1ms 2s forwards;
+    animation: fa-deferred 1ms 0.5s forwards;
   }
 }
 
