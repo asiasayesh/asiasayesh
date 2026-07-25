@@ -1,6 +1,6 @@
 # AsiaSayesh
 
-Site for [AsiaSayesh](https://asiasayesh.com): industrial abrasives (grinding wheels, sandpaper, polishing).
+Corporate site for [AsiaSayesh](https://asiasayesh.com).
 
 ## Stack
 
