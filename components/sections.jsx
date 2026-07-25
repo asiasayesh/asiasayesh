@@ -81,7 +81,7 @@ export function Hero({ t }) {
   return (
     <section className="pt-32 pb-20 px-4 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className={`space-y-6 ${t.isRTL ? "lg:col-start-2" : ""}`}>
+        <div className={`space-y-6 ${t.isRTL ? "lg:col-start-2 lg:row-start-1" : ""}`}>
           <div className="inline-block px-3 py-1 bg-primary/10 border-2 border-primary/20 rounded-full text-sm text-primary">
             {t.hero.badge}
           </div>
@@ -109,7 +109,7 @@ export function Hero({ t }) {
           </div>
         </div>
         <div
-          className={`relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden border-2 border-border ${t.isRTL ? "lg:col-start-1" : ""}`}
+          className={`relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden border-2 border-border ${t.isRTL ? "lg:col-start-1 lg:row-start-1" : ""}`}
         >
           <Image
             src="/hero-abrasives.webp"
