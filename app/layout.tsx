@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Poppins, Vazirmatn } from "next/font/google";
 import { products } from "@/lib/content";
@@ -149,7 +148,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased bg-background font-sans">
         {children}
-        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
