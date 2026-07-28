@@ -17,10 +17,13 @@ const vazirmatn = Vazirmatn({
   preload: false,
 });
 
+const siteTitle = "آسیاسایش | AsiaSayesh | اولین تولیدکننده ساینده صنعتی در ایران";
+const siteDescription =
+  "آسیاسایش، اولین تولیدکننده محصولات ساینده صنعتی در ایران. سمباده چتری، حلقوی، تسمه‌ای، فلاپ دیسک، رول کارتریج و پد اسکاچ.";
+
 export const metadata: Metadata = {
-  title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
-  description:
-    "AsiaSayesh (آسیاسایش): premium industrial abrasives in Iran. Grinding wheels, sandpaper, and polishing products.",
+  title: siteTitle,
+  description: siteDescription,
   keywords: [
     "AsiaSayesh",
     "آسیاسایش",
@@ -36,6 +39,8 @@ export const metadata: Metadata = {
     "ساینده",
     "سنباده",
     "پولیش صنعتی",
+    "تولیدکننده ساینده",
+    "سمباده صنعتی",
     ...products.flatMap(({ en, fa }) => [en.name, fa.name]),
   ],
   metadataBase: new URL("https://asiasayesh.com"),
@@ -44,28 +49,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    alternateLocale: ["fa_IR"],
+    locale: "fa_IR",
+    alternateLocale: ["en_US"],
     url: "https://asiasayesh.com",
-    siteName: "AsiaSayesh | آسیاسایش",
-    title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
-    description:
-      "Premium industrial abrasives from AsiaSayesh. Grinding wheels, sandpaper, and polishing products.",
+    siteName: "آسیاسایش | AsiaSayesh",
+    title: siteTitle,
+    description: siteDescription,
     images: [
       {
         url: "/og.jpg",
         width: 1731,
         height: 909,
-        alt: "AsiaSayesh | آسیاسایش Industrial Abrasive Products",
+        alt: "آسیاسایش | AsiaSayesh محصولات ساینده صنعتی",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AsiaSayesh | آسیاسایش | Premium Industrial Abrasive Products",
-    description:
-      "Premium industrial abrasives from AsiaSayesh. Grinding wheels, sandpaper, and polishing products.",
+    title: siteTitle,
+    description: siteDescription,
     images: ["/og.jpg"],
   },
   robots: {
@@ -117,8 +120,7 @@ export default function RootLayout({
     alternateName: ["آسیاسایش", "آسیا سایش", "Asia Sayesh"],
     url: "https://asiasayesh.com",
     logo: "https://asiasayesh.com/logo.png",
-    description:
-      "AsiaSayesh (آسیاسایش) — leading provider of industrial abrasive solutions in Iran.",
+    description: siteDescription,
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
